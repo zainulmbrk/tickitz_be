@@ -1,0 +1,28 @@
+{
+  "name": "tickitz_be",
+  "version": "1.0.0",
+  "description": "back_end_tickitz",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "keywords": [
+    "tickitz"
+  ],
+  "author": "semravvut",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "bcrypt-nodejs": "^0.0.3",
+    "body-parser": "^1.20.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "express-paginate": "^1.0.2",
+    "jsonwebtoken": "^8.5.1",
+    "moment": "^2.29.3",
+    "multer": "^1.4.5-lts.1",
+    "mysql": "^2.18.1"
+  }
+}
