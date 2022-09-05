@@ -34,41 +34,41 @@ module.exports = {
         //     casts: item.casts.split(','),
         //   }
         // })
-        resolve({
-          message: 'Get All From Movies Success',
-          status: 200,
-          data: {
-            results: results,
-          },
-        })
-        // else {
-        //   db.query(`SELECT movies_id FROM movies`, (err, result) => {
-        //     if (err) {
-        //       console.log(err)
-        //       reject({
-        //         message: 'Something wrong',
-        //       })
-        //     } else {
-        //       totalPage = Math.ceil(result.length / limit)
-        //       if (page > totalPage) {
-        //         reject({
-        //           message: 'Page not found!',
-        //           status: 404,
-        //           data: [],
-        //         })
-        //       }
-        //       resolve({
-        //         message: 'Get All From Movies Success',
-        //         status: 200,
-        //         data: {
-        //           totalRow: results.length,
-        //           totalPage: totalPage,
-        //           results: results,
-        //         },
-        //       })
-        //     }
-        //   })
-        // }
+        // resolve({
+        //   message: 'Get All From Movies Success',
+        //   status: 200,
+        //   data: {
+        //     results: results,
+        //   },
+        // })
+        else {
+          db.query(`SELECT movies_id FROM movies`, (err, result) => {
+            if (err) {
+              console.log(err)
+              reject({
+                message: 'Something wrong',
+              })
+            } else {
+              totalPage = Math.ceil(result.length / limit)
+              if (page > totalPage) {
+                reject({
+                  message: 'Page not found!',
+                  status: 404,
+                  data: [],
+                })
+              }
+              resolve({
+                message: 'Get All From Movies Success',
+                status: 200,
+                data: {
+                  totalRow: results.length,
+                  totalPage: totalPage,
+                  results: results,
+                },
+              })
+            }
+          })
+        }
       })
     })
   },
