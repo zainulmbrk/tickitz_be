@@ -72,27 +72,6 @@ module.exports = {
       })
     })
   },
-  // getAll: (req, res) => {
-  //   return new Promise((resolve, reject) => {
-  //     // const { movies_id } = req.params
-  //     db.query(
-  //       `SELECT title, cover, release_date, director, description casts, gen_name FROM movies
-  //       LEFT JOIN genres ON movies.genre_id = genres.genre_id`,
-  //       (err, results) => {
-  //         if (err) {
-  //           reject({
-  //             message: "ada error",
-  //           })
-  //         }
-  //         resolve({
-  //           message: "get movies All Success",
-  //           status: 200,
-  //           data: results,
-  //         })
-  //       }
-  //     )
-  //   })
-  // },
 
   getDetails: (req, res) => {
     return new Promise((resolve, reject) => {
@@ -107,12 +86,7 @@ module.exports = {
               status: 400,
             })
           }
-          // let dataparse = results.map((item) => {
-          //   return {
-          //     ...item,
-          //     gen_name: JSON.parse(item.gen_name),
-          //   }
-          // })
+
           resolve({
             message: 'Detail Movies',
             status: 200,
@@ -157,24 +131,16 @@ module.exports = {
   update: (req, res) => {
     return new Promise((resolve, reject) => {
       const { movies_id } = req.params
+
       db.query(
         `SELECT * FROM movies where movies_id=${movies_id}`,
-        (err, resultsData) => {
+        (err, results) => {
           if (err) {
             res.send({ message: 'ada error' })
           }
 
-          // fs.unlink(`./uploads/${resultsData[0].cover}`, function (err) {
-          //   if (err)
-          //     resolve({
-          //       message: 'update movies success',
-          //       status: 200,
-          //       data: resultsData,
-          //     })
-          // })
-
           const previousData = {
-            ...resultsData[0],
+            ...results[0],
             ...req.body,
           }
           const {
@@ -189,16 +155,14 @@ module.exports = {
             genre,
           } = previousData
 
-          const tempImg = resultsData[0].cover
+          const tempImg = results[0].cover
 
           if (req.body.cover) {
             fs.unlink(`uploads/${tempImg}`, function (err) {
               if (err) {
                 console.log(err)
-                resolve({
-                  message: 'Update Movies Success',
-                  status: 200,
-                  data: resultsData,
+                reject({
+                  message: 'something error',
                 })
               }
             })
@@ -208,9 +172,9 @@ module.exports = {
             `UPDATE movies SET title='${title}', cover='${cover}', release_date='${release_date}', hours='${hours}', minutes='${minutes}', director='${director}', description='${description}', casts='${casts}', genre='${genre}' WHERE movies_id=${movies_id}`,
             (err, results) => {
               if (err) {
-                console.log(err)
                 reject({ message: 'ada error' })
               }
+
               resolve({
                 message: 'update movies success',
                 status: 200,

@@ -32,7 +32,7 @@ module.exports = {
     try {
       const reqModifer = {
         ...req,
-        body: { ...req.body, cover: req.filename },
+        body: { ...req.body, cover: req.file.filename },
       }
       const results = await Movies.add(reqModifer, res)
       return res.status(201).send(results)
@@ -43,15 +43,13 @@ module.exports = {
   },
   updateMovies: async (req, res) => {
     try {
+      let reqModifer = {
+        ...req,
+      }
       if (req.file) {
         reqModifer = {
           ...req,
           body: { ...req.body, cover: req.file.filename },
-        }
-      } else {
-        reqModifer = {
-          ...req,
-          body: { ...req.body },
         }
       }
       const results = await Movies.update(reqModifer, res)
