@@ -32,7 +32,7 @@ Tickitz backend made with express.js, node.js, and mysql
 - Auth (Login/Register)
 
 ## Screenshots
-
+https://drive.google.com/file/d/1f_6DN1KZo4th5EhqENQ9iusJhkkDaGKu/view?usp=sharing
   
 <div  align="start">
 <a href="https://drive.google.com/uc?export=view&id=1Gz9CJ6IRJsW5yrmj5EGMyMym-Izezavd"><img src="https://drive.google.com/uc?export=view&id=1Gz9CJ6IRJsW5yrmj5EGMyMym-Izezavd" style="width: 300px; max-width: 100%; height: auto" title="Click to enlarge picture" />
