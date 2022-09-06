@@ -31,6 +31,12 @@ Tickitz backend made with express.js, node.js, and mysql
 - CRUD on book
 - Auth (Login/Register)
 
+## Screenshots
+
+  
+<div  align="start">
+<img  width="500"  src="[https://github.com/teach-me-project/DailyNews_BE/blob/main/WhatsApp%20Image%202022-07-26%20at%2010.45.26.jpeg](https://photos.google.com/album/AF1QipP2pKXhsvu8PK54kw3gKXEqds1Tno9rtYcOm-YJ)">
+
 ### Author
 [Muhammad Zainul Mubarok](https://github.com/zainulmbrk)
 
