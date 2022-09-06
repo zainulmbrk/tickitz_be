@@ -36,6 +36,7 @@ Tickitz backend made with express.js, node.js, and mysql
   
 <div  align="start">
 <a href="https://drive.google.com/uc?export=view&id=<FILEID>"><img src="https://drive.google.com/uc?export=view&id=1Gz9CJ6IRJsW5yrmj5EGMyMym-Izezavd" style="width: 350px; max-width: 100%; height: auto" title="Click to enlarge picture" />
+    <a href="https://drive.google.com/uc?export=view&id=<FILEID>"><img src="https://drive.google.com/uc?export=view&id=1JbZeWXc3jrmopQqovN7iMlGryTH3GyRu" style="width: 350px; max-width: 100%; height: auto" title="Click to enlarge picture" />
 
 ### Author
 [Muhammad Zainul Mubarok](https://github.com/zainulmbrk)
