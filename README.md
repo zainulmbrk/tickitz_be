@@ -35,8 +35,8 @@ Tickitz backend made with express.js, node.js, and mysql
 
   
 <div  align="start">
-<a href="https://drive.google.com/uc?export=view&id=1Gz9CJ6IRJsW5yrmj5EGMyMym-Izezavd"><img src="https://drive.google.com/uc?export=view&id=1Gz9CJ6IRJsW5yrmj5EGMyMym-Izezavd" style="width: 350px; max-width: 100%; height: auto" title="Click to enlarge picture" />
-    <a href="https://drive.google.com/uc?export=view&id=1f_6DN1KZo4th5EhqENQ9iusJhkkDaGKu"><img src="https://drive.google.com/uc?export=view&id=1f_6DN1KZo4th5EhqENQ9iusJhkkDaGKu" style="width: 350px; max-width: 100%; height: auto" title="Click to enlarge picture" />
+<a href="https://drive.google.com/uc?export=view&id=1Gz9CJ6IRJsW5yrmj5EGMyMym-Izezavd"><img src="https://drive.google.com/uc?export=view&id=1Gz9CJ6IRJsW5yrmj5EGMyMym-Izezavd" style="width: 300px; max-width: 100%; height: auto" title="Click to enlarge picture" />
+    <a href="https://drive.google.com/uc?export=view&id=1f_6DN1KZo4th5EhqENQ9iusJhkkDaGKu"><img src="https://drive.google.com/uc?export=view&id=1f_6DN1KZo4th5EhqENQ9iusJhkkDaGKu" style="width: 300px; max-width: 100%; height: auto" title="Click to enlarge picture" />
 
 ### Author
 [Muhammad Zainul Mubarok](https://github.com/zainulmbrk)
