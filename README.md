@@ -16,12 +16,12 @@
       </ul>
     </li>
   <li>
-      <a href="#documentation">Documentation</a>
+      <a href="#documentation">Postman Documentation</a>
     </li>
 </ol>
 
 ## About The Project
-Tickitz backend made with express js, nodejs, mysql
+Tickitz backend made with express.js, node.js, and mysql
 
 ### Feature
 - CRUD on movies
@@ -40,7 +40,7 @@ Get started with this project, intructions on setting up your project locally.<b
 To get a local copy up and running follow these simple steps.
 ### Prerequisites
 
-Before installing, you must be install [node js](https://nodejs.org) and [yarn](https://yarnpkg.com/getting-started/install)
+Before installing, you must be install [node js](https://nodejs.org) 
 ### Installation
 
 1. Clone this repo
