@@ -2,12 +2,12 @@ require('dotenv').config()
 const cors = require('cors')
 const express = require('express')
 const app = express()
-const port = 9511
+const port = process.env.PORT
 const bodyParser = require('body-parser')
 const router = require('./routes')
 const path = require('path')
 const { getAllSchedule } = require('./controller/scheduleController')
-
+const mysql = require('mysql2')
 // const corsOptions = {
 //   origin: "localhost:3000",
 //   optionsSuccessStatus: 200,
